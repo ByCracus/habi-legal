@@ -16,4 +16,4 @@ Planned GitHub Pages URLs:
 
 Contact:
 
-- `polfm2007@gmail.com`
+- `polfm3@hotmail.com`
