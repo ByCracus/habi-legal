@@ -10,10 +10,23 @@
     h1, h2 { color: #0f172a; }
     .card { background: white; border-radius: 18px; padding: 28px; box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08); }
     p, li { line-height: 1.65; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; color: #1552b8; border: 1px solid #cbd5e1; border-radius: 8px; text-decoration: none; }
+    nav a[aria-current] { color: #fff; background: #1552b8; border-color: #1552b8; }
+    a:focus-visible { outline: 3px solid #172033; outline-offset: 3px; }
+    .card { overflow-wrap: anywhere; }
+    @media (max-width: 420px) { main { padding: 20px 12px 40px; } .card { padding: 20px; } }
   </style>
+<script>
+  const language = new URLSearchParams(window.location.search).get('lang');
+  if (language === 'ca' || language === 'es') {
+    window.location.replace(language + '/' + window.location.pathname.split('/').pop());
+  }
+</script>
 </head>
 <body>
   <main>
+    <nav aria-label="Language"><a href="privacy-policy.html" lang="en" hreflang="en" aria-current="page">English</a> <a href="ca/privacy-policy.html" lang="ca" hreflang="ca">Català</a> <a href="es/privacy-policy.html" lang="es" hreflang="es">Español</a></nav>
     <div class="card">
       <h1>Habi Privacy Policy</h1>
       <p>Last updated: April 22, 2026</p>
