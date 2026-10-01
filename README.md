@@ -8,7 +8,7 @@ This repository hosts the static documents used for:
 - Terms of Service
 - Account Deletion
 
-Planned GitHub Pages URLs:
+Published GitHub Pages URLs:
 
 - `https://bycracus.github.io/habi-legal/privacy-policy.html`
 - `https://bycracus.github.io/habi-legal/terms-of-service.html`
@@ -17,3 +17,11 @@ Planned GitHub Pages URLs:
 Contact:
 
 - `polfm3@hotmail.com`
+
+Policy revision: 2026-10-01. English, Catalan and Spanish are available through
+the language links and `?lang=en`, `?lang=ca`, or `?lang=es` on the root pages.
+
+The document HTML is generated from the app's canonical legal content. Publish
+the generated documents together after checking translation and content parity;
+do not independently edit individual translations here. GitHub Pages publishes
+the root of `main`.
