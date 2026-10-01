@@ -25,7 +25,7 @@
   </style>
 <script>
 const language = new URLSearchParams(window.location.search).get('lang');
-if (language === 'ca' || language === 'es') window.location.replace(language + '/' + window.location.pathname.split('/').pop());
+if (["ca","es","fr","de","zh","pt","it","ja","ko"].includes(language)) window.location.replace(language + '/' + window.location.pathname.split('/').pop());
 </script>
 </head>
 <body>
@@ -34,6 +34,13 @@ if (language === 'ca' || language === 'es') window.location.replace(language + '
       <a href="account-deletion.html" lang="en" hreflang="en" aria-current="page">English</a>
       <a href="ca/account-deletion.html" lang="ca" hreflang="ca">Català</a>
       <a href="es/account-deletion.html" lang="es" hreflang="es">Español</a>
+      <a href="fr/account-deletion.html" lang="fr" hreflang="fr">Français</a>
+      <a href="de/account-deletion.html" lang="de" hreflang="de">Deutsch</a>
+      <a href="zh/account-deletion.html" lang="zh" hreflang="zh">简体中文</a>
+      <a href="pt/account-deletion.html" lang="pt" hreflang="pt">Português</a>
+      <a href="it/account-deletion.html" lang="it" hreflang="it">Italiano</a>
+      <a href="ja/account-deletion.html" lang="ja" hreflang="ja">日本語</a>
+      <a href="ko/account-deletion.html" lang="ko" hreflang="ko">한국어</a>
   </nav>
   <header><h1>Habi | Account Deletion</h1>
     <p>Request deletion of your Habi account and associated data, with or without the app.</p>
